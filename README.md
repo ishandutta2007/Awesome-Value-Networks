@@ -9,7 +9,10 @@ A Value Network is a specialized neural network architecture designed to estimat
 
 The technical progression of state-valuation layers has transitioned from rigid matrix lookups to deep grid heuristics, maximum entropy state mappings, and multi-step process reward models.
 
+```
 [Tabular TD Value Functions (1980s)] ----> [Deep Geometric Value Arrays (AlphaGo, 2016)] ----> [Process Reward Models (PRMs, 2024+)](Rigid State-Lookup Matrix)                   (Deep Convolutional Board Evaluation)             (Token-Level Intermediate Step Verification)
+```
+
 *   **The Foundational Tabular Era (Temporal Difference Learning, ~1980s–2010s)**
     *   *Concept:* The structural baseline. Early frameworks mapped out environment utilities using basic temporal difference (TD) errors or tabular $Q$-learning matrices. The system maintained a discrete, hand-crafted state-lookup grid, updating expected values step-by-step as an agent navigated small grid worlds.
     *   *Limitation:* Suffered heavily from the **Curse of Dimensionality**. If the state space scaled up (e.g., in a complex board game), the table size exploded, causing the system to experience severe memory and capacity bottlenecks.
