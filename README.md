@@ -1,11 +1,16 @@
-# Awesome-Value-Networks
-## Value Networks in AI: History, Progression, Variants, & Applications
+# 🧠 Awesome Value Networks
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Value Networks Banner" width="100%">
+</p>
+
+## 🚀 Value Networks in AI: History, Progression, Variants, & Applications
 
 A Value Network is a specialized neural network architecture designed to estimate the expected cumulative future reward, utility, or winning probability from a given state or state-action pair. While **Policy Networks** act as the intuitive engine that directly outputs an action vector, Value Networks serve as the analytical evaluation engine—quantifying the structural strength of a position. Over the history of AI, Value Networks have evolved from simple tabular lookups to deep convolutional estimators, generalized state-space value functions, and highly precise **Process-Supervised Step Verifiers** that guide post-training scaling and test-time search algorithms in modern frontier reasoning models.
 
 ---
 
-## 1. The Macro Chronological Evolution
+## 📅 1. The Macro Chronological Evolution
 
 The technical progression of state-valuation layers has transitioned from rigid matrix lookups to deep grid heuristics, maximum entropy state mappings, and multi-step process reward models.
 
@@ -24,7 +29,7 @@ flowchart LR
 
 ---
 
-## 2. Core Functional & State-Valuation Variants
+## 🛠️ 2. Core Functional & State-Valuation Variants
 
 Value Networks are strictly categorized based on the explicit mathematical inputs and boundaries they parse across the optimization pipeline.
 
@@ -37,7 +42,7 @@ Value Networks are strictly categorized based on the explicit mathematical input
 
 ---
 
-## 3. Inference-Time Search & Verification Modalities
+## 🔍 3. Inference-Time Search & Verification Modalities
 
 Depending on how a Value Network interfaces with an exploration graph at runtime, it guides choices through distinct computational layouts.
 
@@ -51,7 +56,7 @@ Depending on how a Value Network interfaces with an exploration graph at runtime
 
 ---
 
-## 4. Production Engineering Challenges & Hardware Solutions
+## ⚡ 4. Production Engineering Challenges & Hardware Solutions
 
 Translating value network computations into stable, low-latency commercial frameworks introduces unique system bottlenecks.
 
@@ -62,7 +67,7 @@ Translating value network computations into stable, low-latency commercial frame
 
 ---
 
-## 5. Frontier Real-World AI Infrastructure Applications
+## 🌍 5. Frontier Real-World AI Infrastructure Applications
 
 | Application Field | Description & Utility | Year First Used | First Used Paper |
 | :--- | :--- | :--- | :--- |

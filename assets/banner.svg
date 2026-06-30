@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070a13" />
+    </linearGradient>
+
+    <!-- Node Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="accent1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bgGrad)" />
+
+  <!-- Grid / Abstract Tech Lines -->
+  <g stroke="#1f2937" stroke-width="1" opacity="0.5">
+    <path d="M 0,100 L 1200,100 M 0,200 L 1200,200 M 0,300 L 1200,300" />
+    <path d="M 200,0 L 200,400 M 400,0 L 400,400 M 600,0 L 600,400 M 800,0 L 800,400 M 1000,0 L 1000,400" />
+  </g>
+
+  <!-- Value Network Graph Visuals (Dynamic/Abstract Particles & Edges) -->
+  <g opacity="0.85">
+    <!-- Network Edges -->
+    <line x1="150" y1="200" x2="300" y2="100" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="5 5" />
+    <line x1="150" y1="200" x2="300" y2="300" stroke="#3b82f6" stroke-width="2" />
+    <line x1="300" y1="100" x2="450" y2="200" stroke="#ec4899" stroke-width="2" />
+    <line x1="300" y1="300" x2="450" y2="200" stroke="#10b981" stroke-width="2" stroke-dasharray="3 3" />
+    <line x1="450" y1="200" x2="600" y2="120" stroke="#8b5cf6" stroke-width="2.5" />
+    <line x1="450" y1="200" x2="600" y2="280" stroke="#3b82f6" stroke-width="2" />
+
+    <!-- Connection Paths on Right Side -->
+    <line x1="1050" y1="200" x2="900" y2="100" stroke="#10b981" stroke-width="2" />
+    <line x1="1050" y1="200" x2="900" y2="300" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="5 5" />
+    <line x1="900" y1="100" x2="750" y2="200" stroke="#3b82f6" stroke-width="2" />
+    <line x1="900" y1="300" x2="750" y2="200" stroke="#ec4899" stroke-width="2" />
+    
+    <!-- Pulse Circles (Glow) -->
+    <circle cx="150" cy="200" r="10" fill="#8b5cf6" filter="url(#glow)" />
+    <circle cx="300" cy="100" r="14" fill="#3b82f6" filter="url(#glow)" />
+    <circle cx="300" cy="300" r="12" fill="#10b981" filter="url(#glow)" />
+    <circle cx="450" cy="200" r="18" fill="#ec4899" filter="url(#glow)" />
+    <circle cx="600" cy="120" r="8" fill="#8b5cf6" filter="url(#glow)" />
+    <circle cx="600" cy="280" r="10" fill="#3b82f6" filter="url(#glow)" />
+    
+    <!-- Right side nodes -->
+    <circle cx="1050" cy="200" r="12" fill="#10b981" filter="url(#glow)" />
+    <circle cx="900" cy="100" r="10" fill="#8b5cf6" filter="url(#glow)" />
+    <circle cx="900" cy="300" r="14" fill="#ec4899" filter="url(#glow)" />
+    <circle cx="750" cy="200" r="16" fill="#3b82f6" filter="url(#glow)" />
+  </g>
+
+  <!-- Typography -->
+  <g text-anchor="middle" font-family="'Outfit', 'Inter', system-ui, -apple-system, sans-serif">
+    <!-- Main Title -->
+    <text x="600" y="210" font-size="58" font-weight="900" fill="url(#accent1)" letter-spacing="4px" filter="url(#glow)">
+      AWESOME VALUE NETWORKS
+    </text>
+    <!-- Subtitle -->
+    <text x="600" y="260" font-size="20" font-weight="500" fill="#9ca3af" letter-spacing="2px">
+      Curated List of State Evaluation Engines in Artificial Intelligence
+    </text>
+  </g>
+</svg>
