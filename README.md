@@ -9,7 +9,7 @@ A Value Network is a specialized neural network architecture designed to estimat
 
 The technical progression of state-valuation layers has transitioned from rigid matrix lookups to deep grid heuristics, maximum entropy state mappings, and multi-step process reward models.
 
-```
+```mermaid
 [Tabular TD Value Functions (1980s)] ----> [Deep Geometric Value Arrays (AlphaGo, 2016)] ----> [Process Reward Models (PRMs, 2024+)](Rigid State-Lookup Matrix)                   (Deep Convolutional Board Evaluation)             (Token-Level Intermediate Step Verification)
 ```
 
