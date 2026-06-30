@@ -4,6 +4,14 @@
   <img src="assets/banner.svg" alt="Awesome Value Networks Banner" width="100%">
 </p>
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+</p>
+
+<!-- SEO Metadata -->
+<meta name="description" content="A curated list of awesome value networks, process-supervised reward models (PRM), state-value functions, and search verification modalities in modern AI." />
+<meta name="keywords" content="Value Networks, Actor-Critic, Reinforcement Learning, PRM, ORM, Process-Supervised Reward Models, Monte Carlo Tree Search, MCTS, AI Reasoning, DeepSeek, OpenAI o1" />
+
 ## 🚀 Value Networks in AI: History, Progression, Variants, & Applications
 
 A Value Network is a specialized neural network architecture designed to estimate the expected cumulative future reward, utility, or winning probability from a given state or state-action pair. While **Policy Networks** act as the intuitive engine that directly outputs an action vector, Value Networks serve as the analytical evaluation engine—quantifying the structural strength of a position. Over the history of AI, Value Networks have evolved from simple tabular lookups to deep convolutional estimators, generalized state-space value functions, and highly precise **Process-Supervised Step Verifiers** that guide post-training scaling and test-time search algorithms in modern frontier reasoning models.
