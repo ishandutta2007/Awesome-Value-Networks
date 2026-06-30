@@ -107,4 +107,17 @@ To advance your development context, repository architecture, or documentation f
 * To see how value trees are traversed at runtime, check out **[Tree-of-Thoughts (ToT) Frameworks](#)**.
 * To master the training mechanics used to align value estimators, explore **[Reinforcement Learning from Human Feedback (RLHF)](#)**.
 
+---
+
+##  Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Value-Networks&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Value-Networks&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Value-Networks&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Value-Networks&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
+
 
