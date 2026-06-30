@@ -30,20 +30,20 @@ flowchart LR
 
 Value Networks are strictly categorized based on the explicit mathematical inputs and boundaries they parse across the optimization pipeline.
 
-### A. State-Value Networks ($V(s)$)
-*   **Mechanism:** Evaluates the absolute utility of a physical state $s$ under a given policy baseline, outputting a scalar value indicating how safe, advantageous, or high-yielding that position is intrinsically.
-*   **Application:** Serves as the baseline calculator inside Advantage Actor-Critic (A2C) networks, suppressing gradient variance during policy updates.
+-  ### A. State-Value Networks ($V(s)$)
+    *   **Mechanism:** Evaluates the absolute utility of a physical state $s$ under a given policy baseline, outputting a scalar value indicating how safe, advantageous, or high-yielding that position is intrinsically.
+    *   **Application:** Serves as the baseline calculator inside Advantage Actor-Critic (A2C) networks, suppressing gradient variance during policy updates.
 
-### B. Action-Value Networks ($Q(s, a)$)
-*   **Mechanism:** Evaluates the quality of taking a specific action $a$ from a specific state $s$. The network maps out a full action-value coordinate field, allowing an agent to select paths by following the highest-scoring vector.
-*   **Application:** The defining layer behind continuous continuous-control models like Deep Deterministic Policy Gradients (DDPG).
+-  ### B. Action-Value Networks ($Q(s, a)$)
+    *   **Mechanism:** Evaluates the quality of taking a specific action $a$ from a specific state $s$. The network maps out a full action-value coordinate field, allowing an agent to select paths by following the highest-scoring vector.
+    *   **Application:** The defining layer behind continuous continuous-control models like Deep Deterministic Policy Gradients (DDPG).
 
-### C. Soft Value Functions (Maximum Entropy)
-*   **Mechanism:** Augments traditional reward calculations with information theory, adding an explicit policy entropy regularizer ($\alpha H(\pi(\cdot|s))$) into the value layer.
-*   **Pros:** Prevents premature policy collapse by continually rewarding the agent for maintaining diverse, alternative behavioral strategies during exploration blocks.
+-  ### C. Soft Value Functions (Maximum Entropy)
+    *   **Mechanism:** Augments traditional reward calculations with information theory, adding an explicit policy entropy regularizer ($\alpha H(\pi(\cdot|s))$) into the value layer.
+    *   **Pros:** Prevents premature policy collapse by continually rewarding the agent for maintaining diverse, alternative behavioral strategies during exploration blocks.
 
-### D. Process-Supervised Reward Models (PRMs / Token Verifiers)
-*   **Mechanism:** Operates over textual token spaces. The input is a sequence of generated reasoning tokens representing a single thinking step, and the model outputs a probability score indicating whether that specific deduction step contains any logical or mathematical errors.
+-  ### D. Process-Supervised Reward Models (PRMs / Token Verifiers)
+    *   **Mechanism:** Operates over textual token spaces. The input is a sequence of generated reasoning tokens representing a single thinking step, and the model outputs a probability score indicating whether that specific deduction step contains any logical or mathematical errors.
 
 ---
 
